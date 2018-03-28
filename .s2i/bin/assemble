@@ -5,7 +5,6 @@ echo "Before assembling"
 rc=$?
 
 if [ $rc -eq 0 ]; then
-    npm install mongodb
     curl -o mc https://dl.minio.io/client/mc/release/linux-amd64/mc
     chmod +x mc
 else
