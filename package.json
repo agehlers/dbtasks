@@ -2,7 +2,8 @@
   "name": "dbtasks",
   "description": "Nodejs example to run db tasks",
   "dependencies": {
-    "mongodb": "^3.0.0"
+    "mongodb": "^3.0.0",
+    "mongodb-backup": "^1.6.0",
   },
   "scripts": {
     "start": "node server.js"
