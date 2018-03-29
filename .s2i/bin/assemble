@@ -12,6 +12,8 @@ if [ $rc -eq 0 ]; then
     mkdir /opt/app-root/minio
     curl -o /opt/app-root/minio/mc https://dl.minio.io/client/mc/release/linux-amd64/mc
     chmod +x /opt/app-root/minio/mc
+    rm -f mongodb-linux-x86_64-3.6.3.tar
+    export PATH=$PATH:opt/app-root/minio:opt/app-root/mongodb/bin
 else
     echo "ERROR: Failed assembling - $rc"
 fi
